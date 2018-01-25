@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">WeatherForecast</string>
     <string name="data_unavailable">Data unavailable</string>
+    <string name="date">Date:</string>
+    <string name="low_temp">Lowest temperature:</string>
+    <string name="high_temp">Hightest Temperature:</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="temp">C</string>
+    <string name="enable_internet">Please enable internet !</string>
 </resources>

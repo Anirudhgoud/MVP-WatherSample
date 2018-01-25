@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.weather.forecast.home.WeatherActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="@dimen/margin_10dp">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvDateDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_toRightOf="@+id/tvDateDesc"
+            android:paddingLeft="@dimen/margin_2dp" />
+
+
+        <TextView
+            android:id="@+id/tvLowTempDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateDesc"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="@string/low_temp" />
+
+        <TextView
+            android:id="@+id/tvLowTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateDesc"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_toRightOf="@+id/tvLowTempDesc" />
+
+        <TextView
+            android:id="@+id/tvhighTempDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLowTempDesc"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="@string/high_temp" />
+
+        <TextView
+            android:id="@+id/tvHighTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLowTemp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_toRightOf="@+id/tvhighTempDesc" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/view_loading"
+        layout="@layout/layout_view_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

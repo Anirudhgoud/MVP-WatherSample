@@ -15,6 +15,8 @@ public interface WeatherContract {
         void hideProgress();
 
         void showWeatherData(Example example);
+
+        void onNetworkUnavailable();
     }
 
     interface WeathetPresenter {

@@ -12,7 +12,7 @@ public interface WeatherDataSource {
 
         void onWeatherDataLoaded(Example example);
 
-        void onDataNotAvailable(String message);
+        void onDataNotAvailable();
 
         void onNetworkError(String message);
     }

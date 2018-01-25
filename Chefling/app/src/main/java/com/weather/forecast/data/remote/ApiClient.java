@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static final String YAHOO_WEATHER_API = "https://query.yahooapis.com/v1/public/";
+    public static final String YAHOO_WEATHER_API = "https://query.yahooapis.com/";
 
     public static final String BASE_URL = YAHOO_WEATHER_API;
     private static Retrofit googleRetrofit = null;
